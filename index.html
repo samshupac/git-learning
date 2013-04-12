@@ -9,7 +9,8 @@
 
 <h3>Have Git ignore folders/files from a repo</h3>
 <ol>
-	<li>Remove folders/files from repo
+	<li>Remove/Untrack folders/files from repo that should be ignored by Git<br>
+		<em>Git can only ignore untracked files</em>
 		<pre>git rm [folder/filename]</pre>
 	</li>
 	<li>Check Git status to confirm which folders/files will be deleted upon commit
@@ -17,5 +18,9 @@
 	</li>
 	<li>Commit changes (removing folders/files from repo) (NB: '-a' will commit all folders/files effected)
 		<pre>git commit -a -m "description of what has changed in commit"</pre>
+	</li>
+	<li>Create a '.gitignore' file in repo directory</li>
+	<li>add folders/filenames to ignore into .gitignore (example .gitignore file below)
+		<pre>.DS_Store<br>system/</pre>
 	</li>
 </ol>
