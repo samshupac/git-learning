@@ -7,6 +7,17 @@
 	<li>Look into Git author name</li>
 </ul>
 
+<h2>Commands Quick Guide</h2>
+<ul>
+	<li>find out the status of the current (checked-out) branch in repo
+		<pre>git status</pre>
+	</li>
+	<li>show the commit log
+		<pre>git log</pre>
+		<pre>git log -[number of log items to show]</pre>
+	</li>
+</ul>
+
 <h2>How to...</h2>
 
 <h3>Have Git ignore folders/files from a repo</h3>
@@ -68,4 +79,35 @@
 		<pre>git commit -a -m "[useful commit message]"</pre>
 	</li>
 </ol>
+
+<h3>Stashes</h3>
+<ul>
+	<li>a way to take some things you've been working on (changes you've made) and temporarily store them or (stash them somewhere), go work on something else and then you can restore them later and start back where you were and it'll pull those changes.</li>
+</ul>
+<ol>
+	<li>whilst making changes in a branch as normal, but not ready to commit those changes</li>
+	<li>create a stash to temporary store those uncommited changes
+		<pre>git stash</pre>
+	</li>
+	<li>show stashes
+		<pre>git stash list</pre>
+	</li>
+	<li>make interim changes (e.g. perhaps a quick tweak to copy)</li>
+	<li>commit interim changes to repo
+		<pre>git commit -a -m "[useful commit message]"</pre>
+	</li>
+	<li>done with interim/emergency changes</li>
+	<li>show stashes
+		<pre>git stash list</pre>
+	</li>
+	<li>go back to a stash where you left off
+		<pre>git stash apply</pre>
+	</li>
+	<li>upon finishing original changes, commit as usual</li>
+</ol>
+	
+<h3>Remote Repos</h3>
+<ul>
+	<li>example with GitHub</li>
+</ul>
 
