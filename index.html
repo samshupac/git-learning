@@ -5,6 +5,7 @@
 <h2>Git Todo:</h2>
 <ul>
 	<li>Look into Git author name</li>
+	<li>public/private keys for push to remote over SSH</li>
 </ul>
 
 <h2>Commands Quick Guide</h2>
@@ -108,6 +109,28 @@
 	
 <h3>Remote Repos</h3>
 <ul>
-	<li>example with GitHub</li>
+	<li>example with GitHub as remote Git server</li>
 </ul>
 
+<h4>Setup remote repo</h4>
+<ol>
+	<li>add a remote repo to a local repo so that commit can be pushed to remote
+		<pre>git remote add [remote-repo-short-name] [url for remote repo]</pre>
+		<em>remote repo short name - just a way to refer to the remote repo rather than using url everytime (often called 'origin')</em>
+	</li>
+	<li>list remote repos
+		<pre>git remote</pre>
+	</li>
+</ol>
+
+<h4>Push to remote repo</h4>
+<ol>
+	<li>once commited changes (probably in master repo because thats where all deployed commits should be)</li>
+	<li>push latest commit up to remote repo and specific branch
+		<pre>git push [remote-repo-short-name] [remote-branch-name]</pre>
+		<em>remote branch name - the branch you want to push to, likely to be 'master'</em><br>
+		its also possible to push to <u>all</u> branches in a remote repo, if required
+		<pre>git push [remote-repo-short-name] --all</pre>
+	</li>
+	<li>authentication! (can be done automatically if pushing over SSH with public/private keys)</li>
+</ol>
