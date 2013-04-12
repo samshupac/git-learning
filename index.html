@@ -53,5 +53,10 @@
 	</li>
 </ol>
 
-<h4>Conflicts - are conflicted souls</h4>
+<h4>Conflicts (between branches)</h4>
+<ul>
+	<li>when changes occur on 2 branches before they've been merged</li>
+	<li>when a merge is attempted in this scenario Git will fail to merge<br>
+		and add both sections of code will be added into the current branch files from the other branch where changes have taken place. (example file after conflicts)
+		<pre>... <br><br><<<<<<< [current branch-name] <br>   [code from current branch] <br>======== <br>   [code from other branch] <br>>>>>> [other branch-name] <br><br>...</pre>
 
