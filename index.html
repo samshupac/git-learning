@@ -33,6 +33,8 @@
 		<pre>git branch</pre>
 	</li>
 </ul>
+
+<h4>Creating new branches</h4>
 <ol>
 	<li>Create new branch in repo (branch names cannot have spaces in)
 		<pre>git branch [branch-name]</pre>
@@ -40,5 +42,13 @@
 	</li>
 	<li>checkout new branch to start working with it
 		<pre>git checkout [branch-name]</pre>
+	</li>
+	<li>work on files in new branch</li>
+	<li>commit changes in new branch as normal</li>
+	<li>once happy with work in branch... switch back to previous (parent) branch
+		<pre>git checkout [branch-name]</pre>
+	</li>
+	<li>merge new branch into previous (parent) branch
+		<pre>git merge [branch-name]</pre>
 	</li>
 </ol>
