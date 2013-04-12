@@ -134,3 +134,31 @@
 	</li>
 	<li>authentication! (can be done automatically if pushing over SSH with public/private keys)</li>
 </ol>
+
+<h4>Clone remote repo</h4>
+<ol>
+	<li>clone entire repo from remote
+		<pre>git clone [url for remote repo] [local directory]</pre>
+		<em>local directory - (a folder name) is relative to where cd is at the time</em>
+	</li>
+	<li>move into new directory that now contains clone of remote repo (not a Git command)
+		<pre>cd [local directory]</pre>
+	</li>
+	<li>only the branches that were pushed to remote will come down using a clone (in above 'Push to remote repo' only the current branch was pushed to remote)</li>
+	<li>after making changes, push back up to remote (as above)</li>
+</ol>
+
+<h4>To check what has changed on remote</h4>
+<ol>
+	<li>bring references up-to-date from remote server (probably 'origin' branch?), doesn't pull down the files
+		<pre>git remote update</pre>
+	</li>
+	<li>to actually pull down the changes, see below</li>
+</ol>
+
+<h4>Pull down from remote repo</h4>
+<ol>
+	<li>pull down changes (and files) from remote repo and remote branch into a local branch
+		<pre>git pull [remote-branch-name] [local-branch-name]</pre>
+	</li>
+</ol>
