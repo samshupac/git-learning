@@ -27,12 +27,16 @@
 
 <h3>Branching</h3>
 <ul>
-	<li>to get a list of branches in repo (currently checked out branch will be highlighted with *)
+	<li>to get a list of branches in repo (currently checked-out branch will be highlighted with *)
 		<pre>git branch</pre>
 	</li>
 </ul>
 <ol>
-	<li>Create new branch in repo
-		<pre>git branch [branch name]</pre>
+	<li>Create new branch in repo (branch names cannot have spaces in)
+		<pre>git branch [branch-name]</pre>
+		new branch is based on currently checked-out branch at the time of creation
+	</li>
+	<li>checkout new branch to start working with it
+		<pre>git checkout [branch-name]</pre>
 	</li>
 </ol>
