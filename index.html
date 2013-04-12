@@ -126,10 +126,10 @@
 <h4>Push to remote repo</h4>
 <ol>
 	<li>once commited changes (probably in master repo because thats where all deployed commits should be)</li>
-	<li>push latest commit up to remote repo and specific branch
+	<li>push latest commit in current branch up to remote repo and specific remote branch
 		<pre>git push [remote-repo-short-name] [remote-branch-name]</pre>
 		<em>remote branch name - the branch you want to push to, likely to be 'master'</em><br>
-		its also possible to push to <u>all</u> branches in a remote repo, if required
+		its also possible to push to <u>all</u> remote branches in a remote repo, if required
 		<pre>git push [remote-repo-short-name] --all</pre>
 	</li>
 	<li>authentication! (can be done automatically if pushing over SSH with public/private keys)</li>
